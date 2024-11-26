@@ -10,7 +10,7 @@ function Menu() {
         <nav className={styles.menu_section_nav}>
           <Link to={"/1"}>
             <div className={styles.menu_button}>
-              <Button text={"[과제 1-1] 스마일프레쉬"} styleType={"more"} />
+              <Button text={"[과제 1-1] 스마일프레시"} styleType={"more"} />
             </div>
           </Link>
           <Link to={"/2"}>
