@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --color-bk: #151515;
+  --color-gr: #7a7a7a;
+  --color-gr-l: #f2f2f2;
+  --color-green: #00c800;
+  --color-blue: #0099ef;
+  --color-wh: #ffffff;
+}
+
+:root {
+  --font-size-sm: 16px;
+  --font-size-base: 18px;
+  --font-size-h1: 30px;
+  --font-size-title: 20px;
+  --font-size-banner-base: 25px;
+  --font-size-banner-title: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-h1: 23px;
+    --font-size-title: 18px;
+    --font-size-banner-base: 22px;
+    --font-size-banner-title: 30px;
+  }
+}

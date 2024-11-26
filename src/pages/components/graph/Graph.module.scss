@@ -1,0 +1,17 @@
+.graph_wrapper {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  .graph {
+    width: calc(100% / 10);
+    height: 10px;
+    background-color: var(--color-gr-l);
+
+    &.blue_active {
+      background-color: var(--color-blue);
+    }
+    &.gray_active {
+      background-color: var(--color-gr);
+    }
+  }
+}
