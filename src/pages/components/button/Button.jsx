@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
  * @param ButtonClickHandler 클릭이벤트
  * @param active 활성화 상태인지
  * @param styleType styleType === "more" 이면 더보기 스타일로 적용
- * @param styleType 더보기 text 뒤에 icon 있으면 넣기
+ * @param icon 더보기 text 뒤에 icon 있으면 넣기
  * @returns
  */
 function Button({ text, ButtonClickHandler, active, styleType, icon }) {
