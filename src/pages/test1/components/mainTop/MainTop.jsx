@@ -1,21 +1,13 @@
 import React from "react";
 import ImgSlide from "../../../components/swiper/ImgSlide";
-/** banner: 
-    {
-      highlights: "프레쉬",
-      title: ["클럽 고객은", "매일 15% 할인"],
-      subtitle: "클럽 첫 구매시 50% 할인",
-    },
-  
- * 
- * @param {*} param0 
- * @returns 
+/**
+ * @returns 상단 배너 섹션을 렌더링하는 컴포넌트
  */
 function MainTop({ styles, data }) {
+  // 데이터가 없을 경우 대체 메시지 렌더링
   if (!data) {
     return <div>데이터가 없습니다...</div>;
   }
-
   return (
     <section className={styles.main_top_section}>
       <div className="inner">

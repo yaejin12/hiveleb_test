@@ -4,7 +4,6 @@ import linkIcon from "../../../../assets/img/link-icon.svg";
 import Products from "./Products";
 
 /**
- *
  * @returns 상품 리스트들
  */
 function MainBottom({ styles, data }) {
@@ -14,10 +13,8 @@ function MainBottom({ styles, data }) {
 
   // 탭 클릭 이벤트
   const ButtonClickHandler = (index) => {
-    console.log(data);
-    console.log(index);
     setTabActive(index); // 활성화된 탭 인덱스 변경
-    setProductList(data.tabs[index].products);
+    setProductList(data.tabs[index].products); //클릭한 해당 제품들 불러오기
   };
 
   useEffect(() => {
@@ -25,10 +22,6 @@ function MainBottom({ styles, data }) {
       setProductList(data.tabs[0].products);
     }
   }, [data]);
-
-  if (!data) {
-    return;
-  }
 
   return (
     <section className={styles.main_bottom_section}>

@@ -253,7 +253,7 @@ const freeProductList = [
   },
 ];
 
-//
+// 신선마켓 데이터
 export const freshData = {
   id: 1,
   h1: "지금부터의 신선마켓, 스마일프레시",
@@ -271,6 +271,7 @@ export const freshData = {
   ],
 };
 
+// 스마일배송 데이터
 export const deliveryData = {
   id: 2,
   h1: "오늘 주문 내일 도착, 스마일배송",

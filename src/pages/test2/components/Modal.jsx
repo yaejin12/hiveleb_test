@@ -1,6 +1,12 @@
 import React from "react";
 import closeIcon from "../../../assets/img/xmark-solid.svg";
 
+/**
+ * 
+ * @param isClickModalIcon 모달을 클릭했는지 상태
+ * @param setIsClickModalIcon 모달을 클릭했는지 상태변경
+ * @returns 
+ */
 function Modal({ styles, isClickModalIcon, setIsClickModalIcon }) {
   const modalCloseClickHandler = () => {
     setIsClickModalIcon(false);
