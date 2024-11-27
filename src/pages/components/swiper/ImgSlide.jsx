@@ -22,11 +22,16 @@ function ImgSlide({ slideImages }) {
     swiperRef.current?.slideNext();
   };
 
+  // 조건부 렌더링
+  if (!slideImages) {
+    return <div>슬라이드 이미지가 없습니다.</div>;
+  }
+
   return (
     <>
       <Swiper
         className={styles.main_banner_swiper}
-        loop={true}
+        loop={slideImages.length > 1}
         slidesPerView={1}
         modules={[Navigation]}
         navigation
